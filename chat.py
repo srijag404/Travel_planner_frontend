@@ -2,12 +2,11 @@ import gradio as gr
 import requests
 import os
 
-
+FASTAPI_URL="https://travel-planner-backend-82es.onrender.com/chat"
 
 def get_plan(destination, days, budget, interests):
     try:
         response = requests.get(
-            "https://travel-planner-backend-82es.onrender.com/generate_plan",
             params={
                 "destination": destination,
                 "days": days,
