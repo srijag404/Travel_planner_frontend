@@ -7,7 +7,7 @@ import os
 def get_plan(destination, days, budget, interests):
     try:
         response = requests.get(
-            "http://127.0.0.1:8000/plan_trip",
+            "https://travel-planner-backend-82es.onrender.com/chat",
             params={
                 "destination": destination,
                 "days": days,
